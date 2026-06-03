@@ -32,7 +32,7 @@ export default function LocationPage() {
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
             <div className="flex gap-3 rounded-2xl border border-slate-200 bg-white p-6">
-              <MapPin className="h-6 w-6 shrink-0 text-teal-600" />
+              <MapPin className="h-6 w-6 shrink-0 text-purple-600" />
               <div>
                 <p className="font-semibold text-slate-900">{siteConfig.name}</p>
                 <p className="mt-2 text-slate-600">{address.line1}</p>
@@ -51,7 +51,7 @@ export default function LocationPage() {
                   key={item}
                   className="flex items-center gap-2 text-sm text-slate-600"
                 >
-                  <Navigation className="h-4 w-4 text-teal-600" />
+                  <Navigation className="h-4 w-4 text-purple-600" />
                   {item}
                 </li>
               ))}

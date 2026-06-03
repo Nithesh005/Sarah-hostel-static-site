@@ -3,8 +3,8 @@
 :root {
   --background: #f8fafc;
   --foreground: #0f172a;
-  --accent: #0f766e;
-  --accent-light: #ccfbf1;
+  --accent: #7c3aed;
+  --accent-light: #ede9fe;
 }
 
 @theme inline {

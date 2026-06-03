@@ -5,10 +5,10 @@ type Variant = "primary" | "secondary" | "outline" | "whatsapp";
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-teal-700 text-white hover:bg-teal-800 shadow-sm shadow-teal-900/10",
+    "bg-purple-700 text-white hover:bg-purple-800 shadow-sm shadow-purple-900/10",
   secondary: "bg-slate-900 text-white hover:bg-slate-800",
   outline:
-    "border border-slate-300 bg-white text-slate-800 hover:border-teal-600 hover:text-teal-700",
+    "border border-slate-300 bg-white text-slate-800 hover:border-purple-600 hover:text-purple-700",
   whatsapp: "bg-[#25D366] text-white hover:bg-[#20bd5a]",
 };
 
@@ -27,7 +27,7 @@ type ButtonAsLink = BaseProps &
 type ButtonProps = ButtonAsButton | ButtonAsLink;
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-lg px-5 py-2.5 text-sm font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600";
+  "inline-flex items-center justify-center gap-2 rounded-lg px-5 py-2.5 text-sm font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600";
 
 export function Button({
   variant = "primary",

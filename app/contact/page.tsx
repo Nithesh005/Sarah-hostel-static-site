@@ -44,7 +44,7 @@ export default function ContactPage() {
               value={siteConfig.email}
             />
             <div className="flex gap-4 rounded-2xl border border-slate-200 bg-white p-5">
-              <Clock className="h-6 w-6 shrink-0 text-teal-600" />
+              <Clock className="h-6 w-6 shrink-0 text-purple-600" />
               <div>
                 <p className="font-semibold text-slate-900">Office hours</p>
                 <p className="mt-1 text-sm text-slate-600">
@@ -88,7 +88,7 @@ function ContactCard({
       href={href}
       className="flex gap-4 rounded-2xl border border-slate-200 bg-white p-5 transition-shadow hover:shadow-md"
     >
-      <Icon className="h-6 w-6 shrink-0 text-teal-600" />
+      <Icon className="h-6 w-6 shrink-0 text-purple-600" />
       <div>
         <p className="text-sm font-medium text-slate-500">{label}</p>
         <p className="font-semibold text-slate-900">{value}</p>

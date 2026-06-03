@@ -70,43 +70,38 @@ export const siteConfig = {
   /** Image gallery — add photos to public/gallery/ and list them here */
   gallery: [
     {
-      src: "/gallery/room-triple.jpg",
+      src: "/gallery/room-triple1.jpg",
       alt: "Spacious triple sharing room with beds and storage",
       category: "Rooms",
     },
+    // {
+    //   src: "/gallery/common-hall.jpg",
+    //   alt: "Common hall for relaxation and TV",
+    //   category: "Common Areas",
+    // },
     {
-      src: "/gallery/room-double.jpg",
+      src: "/gallery/room3.webp",
       alt: "Clean double sharing AC room",
       category: "Rooms",
     },
     {
-      src: "/gallery/common-hall.jpg",
-      alt: "Common hall for relaxation and TV",
-      category: "Common Areas",
-    },
-    {
-      src: "/gallery/dining.jpg",
-      alt: "Hygienic dining area for residents",
+      src: "/gallery/food1.webp",
+      alt: "Chapathi with sambar and curry",
       category: "Food",
     },
     {
-      src: "/gallery/kitchen.jpg",
-      alt: "Mess kitchen preparing fresh meals",
+      src: "/gallery/food2.webp",
+      alt: "Idly with sambar and curry",
       category: "Food",
     },
     {
-      src: "/gallery/exterior.jpg",
+      src: "/gallery/outer_look.jpeg",
       alt: "Hostel building exterior with secure entrance",
       category: "Building",
     },
     {
-      src: "/gallery/study-area.jpg",
-      alt: "Quiet study area with desks and lighting",
-      category: "Common Areas",
-    },
-    {
-      src: "/gallery/washroom.jpg",
-      alt: "Clean attached washroom facilities",
+      src: "/gallery/aminities1.jpeg",  // washing machine
+      alt: "Washing machine facility with designated drying area",
       category: "Amenities",
     },
   ],

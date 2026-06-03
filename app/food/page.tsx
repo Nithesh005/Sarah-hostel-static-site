@@ -38,12 +38,12 @@ export default function FoodPage() {
         </div>
         <p className="mt-4 text-sm text-slate-600">
           {messTimings.sundayBreakfast}. See{" "}
-          <a href="/rules" className="font-medium text-teal-700 hover:text-teal-800">
+          <a href="/rules" className="font-medium text-purple-700 hover:text-purple-800">
             house rules
           </a>{" "}
           for full policies.
         </p>
-        <div className="mt-6 space-y-3 rounded-lg bg-teal-50 px-4 py-4 text-sm text-teal-900">
+        <div className="mt-6 space-y-3 rounded-lg bg-purple-50 px-4 py-4 text-sm text-purple-900">
           <p>
             <strong>Included with stay:</strong> {messPolicy.includedNote}
           </p>
@@ -51,7 +51,7 @@ export default function FoodPage() {
             <strong>Mandatory:</strong> {messPolicy.mandatoryNote}
           </p>
           <p>{messPolicy.lunchNote}</p>
-          <p className="text-teal-800">{messPolicy.accessNote}</p>
+          <p className="text-purple-800">{messPolicy.accessNote}</p>
         </div>
       </Section>
 

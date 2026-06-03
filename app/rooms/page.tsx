@@ -26,7 +26,7 @@ export default function RoomsPage() {
           {pricingPlans.map((plan) => (
             <Card key={plan.id} highlight={plan.popular}>
               {plan.popular && (
-                <span className="mb-2 inline-block rounded-full bg-teal-100 px-3 py-0.5 text-xs font-semibold text-teal-800">
+                <span className="mb-2 inline-block rounded-full bg-purple-100 px-3 py-0.5 text-xs font-semibold text-purple-800">
                   Most popular
                 </span>
               )}
@@ -35,7 +35,9 @@ export default function RoomsPage() {
                   <h3 className="text-xl font-semibold text-slate-900">
                     {plan.name}
                   </h3>
-                  <p className="text-sm text-slate-500">{plan.type}</p>
+                  <p className="text-sm text-slate-500">
+                    {plan.beds} beds per room
+                  </p>
                 </div>
                 <span className="rounded-lg bg-slate-100 px-2 py-1 text-xs font-medium text-slate-700">
                   {plan.beds} beds
@@ -56,7 +58,7 @@ export default function RoomsPage() {
                     key={item}
                     className="flex items-center gap-2 text-sm text-slate-600"
                   >
-                    <CheckCircle2 className="h-4 w-4 shrink-0 text-teal-600" />
+                    <CheckCircle2 className="h-4 w-4 shrink-0 text-purple-600" />
                     {item}
                   </li>
                 ))}

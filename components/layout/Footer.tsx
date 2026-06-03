@@ -31,7 +31,7 @@ export function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="transition-colors hover:text-violet-400"
+                    className="transition-colors hover:text-purple-400"
                   >
                     {item.label}
                   </Link>
@@ -46,23 +46,23 @@ export function Footer() {
           </h3>
           <ul className="space-y-3 text-sm">
             <li className="flex gap-2">
-              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-violet-400" />
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-purple-400" />
               <span>{getFullAddress()}</span>
             </li>
             <li className="flex gap-2">
-              <Phone className="h-4 w-4 shrink-0 text-violet-400" />
+              <Phone className="h-4 w-4 shrink-0 text-purple-400" />
               <a
                 href={`tel:${siteConfig.phone}`}
-                className="hover:text-violet-400"
+                className="hover:text-purple-400"
               >
                 {siteConfig.phoneDisplay}
               </a>
             </li>
             <li className="flex gap-2">
-              <Mail className="h-4 w-4 shrink-0 text-violet-400" />
+              <Mail className="h-4 w-4 shrink-0 text-purple-400" />
               <a
                 href={`mailto:${siteConfig.email}`}
-                className="hover:text-violet-400"
+                className="hover:text-purple-400"
               >
                 {siteConfig.email}
               </a>

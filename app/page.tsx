@@ -33,7 +33,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden bg-white">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-2 md:items-center md:py-24">
           <div>
-            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-teal-700">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-purple-700">
               Men&apos;s hostel · {siteConfig.address.city}
             </p>
             <h1 className="text-4xl font-bold leading-tight tracking-tight text-slate-900 md:text-5xl">
@@ -48,7 +48,7 @@ export default function HomePage() {
                   key={text}
                   className="flex items-center gap-2 text-slate-700"
                 >
-                  <Icon className="h-5 w-5 text-teal-600" />
+                  <Icon className="h-5 w-5 text-purple-600" />
                   {text}
                 </li>
               ))}
@@ -82,7 +82,7 @@ export default function HomePage() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {topAmenities.map(({ title, description, icon: Icon }) => (
             <Card key={title}>
-              <Icon className="mb-3 h-8 w-8 text-teal-600" />
+              <Icon className="mb-3 h-8 w-8 text-purple-600" />
               <h3 className="font-semibold text-slate-900">{title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-600">
                 {description}
@@ -93,7 +93,7 @@ export default function HomePage() {
         <div className="mt-8 text-center">
           <Link
             href="/amenities"
-            className="inline-flex items-center gap-1 text-sm font-semibold text-teal-700 hover:text-teal-800"
+            className="inline-flex items-center gap-1 text-sm font-semibold text-purple-700 hover:text-purple-800"
           >
             All amenities <ArrowRight className="h-4 w-4" />
           </Link>
@@ -109,13 +109,14 @@ export default function HomePage() {
           {previewPlans.map((plan) => (
             <Card key={plan.id} highlight={plan.popular}>
               {plan.popular && (
-                <span className="mb-2 inline-block rounded-full bg-teal-100 px-3 py-0.5 text-xs font-semibold text-teal-800">
+                <span className="mb-2 inline-block rounded-full bg-purple-100 px-3 py-0.5 text-xs font-semibold text-purple-800">
                   Popular
                 </span>
               )}
               <h3 className="text-lg font-semibold text-slate-900">
-                {plan.name} · {plan.type}
+                {plan.name}
               </h3>
+              <p className="text-sm text-slate-500">{plan.beds} beds per room</p>
               <p className="mt-2 text-3xl font-bold text-slate-900">
                 ₹{plan.rent.toLocaleString("en-IN")}
                 <span className="text-base font-normal text-slate-500">
@@ -131,7 +132,7 @@ export default function HomePage() {
                     key={item}
                     className="flex items-center gap-2 text-sm text-slate-600"
                   >
-                    <CheckCircle2 className="h-4 w-4 text-teal-600" />
+                    <CheckCircle2 className="h-4 w-4 text-purple-600" />
                     {item}
                   </li>
                 ))}
@@ -180,10 +181,10 @@ export default function HomePage() {
         </div>
       </Section>
 
-      <section className="bg-teal-800 py-16 text-white">
+      <section className="bg-purple-800 py-16 text-white">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <h2 className="text-2xl font-bold md:text-3xl">Ready to move in?</h2>
-          <p className="mt-3 text-teal-100">
+          <p className="mt-3 text-purple-100">
             Schedule a visit or chat with us on WhatsApp. Limited beds
             available.
           </p>
@@ -191,7 +192,7 @@ export default function HomePage() {
             <Button
               href={getWhatsAppUrl()}
               variant="whatsapp"
-              className="!bg-white !text-teal-900 hover:!bg-teal-50"
+              className="!bg-white !text-purple-900 hover:!bg-purple-50"
             >
               WhatsApp now
             </Button>

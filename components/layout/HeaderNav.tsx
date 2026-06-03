@@ -8,14 +8,14 @@ import { isNavGroup, isGroupActive } from "@/lib/navigation";
 const navLinkClass = (active: boolean) =>
   `rounded-md px-3 py-2 text-sm font-medium transition-colors ${
     active
-      ? "bg-teal-50 text-teal-800"
+      ? "bg-purple-50 text-purple-800"
       : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
   }`;
 
 const mobileLinkClass = (active: boolean) =>
   `block rounded-lg px-3 py-2.5 text-sm font-medium ${
     active
-      ? "bg-teal-50 text-teal-800"
+      ? "bg-purple-50 text-purple-800"
       : "text-slate-700 hover:bg-slate-50"
   }`;
 

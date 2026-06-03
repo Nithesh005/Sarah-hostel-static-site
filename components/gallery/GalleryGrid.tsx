@@ -30,7 +30,7 @@ export function GalleryGrid({ limit }: { limit?: number }) {
               onClick={() => setFilter(cat)}
               className={`rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${
                 filter === cat
-                  ? "bg-teal-700 text-white"
+                  ? "bg-purple-700 text-white"
                   : "bg-slate-100 text-slate-700 hover:bg-slate-200"
               }`}
             >
@@ -45,7 +45,7 @@ export function GalleryGrid({ limit }: { limit?: number }) {
           <button
             key={img.src}
             type="button"
-            className="group relative aspect-[4/3] overflow-hidden rounded-xl bg-slate-100 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-teal-600"
+            className="group relative aspect-[4/3] overflow-hidden rounded-xl bg-slate-100 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-purple-600"
             onClick={() => setActiveSrc(img.src)}
           >
             <Image

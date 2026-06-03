@@ -17,7 +17,7 @@ export function SiteBrand({ variant = "dark", className = "" }: SiteBrandProps) 
       aria-label={siteConfig.name}
     >
       <span className="text-lg font-extrabold tracking-tight sm:text-xl">
-        <span className={onDark ? "text-teal-400" : "text-teal-700"}>
+        <span className={onDark ? "text-purple-400" : "text-purple-700"}>
           {brand}
         </span>{" "}
         <span className={onDark ? "text-white" : "text-slate-900"}>

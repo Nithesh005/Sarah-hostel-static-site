@@ -42,7 +42,7 @@ export function NavDropdown({
   const linkClass = (href: string) =>
     `block px-4 py-2.5 text-sm transition-colors ${
       pathname === href
-        ? "bg-teal-50 font-medium text-teal-800"
+        ? "bg-purple-50 font-medium text-purple-800"
         : "text-slate-700 hover:bg-slate-50 hover:text-slate-900"
     }`;
 
@@ -60,7 +60,7 @@ export function NavDropdown({
         aria-haspopup="true"
         className={`inline-flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium transition-colors ${
           active
-            ? "bg-teal-50 text-teal-800"
+            ? "bg-purple-50 text-purple-800"
             : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
         }`}
       >

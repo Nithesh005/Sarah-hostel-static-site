@@ -22,7 +22,7 @@ export default function AmenitiesPage() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {amenities.map(({ title, description, icon: Icon }) => (
             <Card key={title}>
-              <Icon className="mb-3 h-9 w-9 text-teal-600" />
+              <Icon className="mb-3 h-9 w-9 text-purple-600" />
               <h3 className="text-lg font-semibold text-slate-900">{title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-600">
                 {description}

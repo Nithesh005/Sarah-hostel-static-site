@@ -12,7 +12,7 @@ export function DeveloperWatermark({ variant = "footer" }: { variant?: "footer" 
       href={developer.linkedInUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="underline-offset-2 transition-colors hover:text-violet-400 hover:underline"
+      className="underline-offset-2 transition-colors hover:text-purple-400 hover:underline"
     >
       {developer.name}
     </a>

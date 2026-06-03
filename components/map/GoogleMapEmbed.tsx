@@ -21,7 +21,7 @@ export function GoogleMapEmbed({ className = "" }: { className?: string }) {
         href={siteConfig.map.directionsUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-teal-700 hover:text-teal-800"
+        className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-purple-700 hover:text-purple-800"
       >
         <MapPin className="h-4 w-4" />
         Open in Google Maps for directions
