@@ -1,8 +1,9 @@
 import Link from "next/link";
-import Image from "next/image";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { siteConfig, getFullAddress } from "@/config/site.config";
+import { getFlatNavLinks } from "@/lib/navigation";
 import { DeveloperWatermark } from "@/components/layout/DeveloperWatermark";
+import { SiteBrand } from "@/components/layout/SiteBrand";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -11,13 +12,9 @@ export function Footer() {
     <footer className="mt-auto border-t border-slate-200 bg-slate-900 text-slate-300">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-3">
         <div>
-          <Image
-            src={siteConfig.logo.src}
-            alt={siteConfig.logo.alt}
-            width={siteConfig.logo.width}
-            height={siteConfig.logo.height}
-            className="mb-4 h-9 w-auto brightness-0 invert"
-          />
+          <div className="mb-4">
+            <SiteBrand variant="light" />
+          </div>
           <p className="text-sm leading-relaxed text-slate-400">
             {siteConfig.tagline}
           </p>
@@ -28,16 +25,18 @@ export function Footer() {
             Quick links
           </h3>
           <ul className="space-y-2 text-sm">
-            {siteConfig.nav.slice(1, 6).map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="transition-colors hover:text-violet-400"
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
+            {getFlatNavLinks()
+              .filter((item) => item.href !== "/")
+              .map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="transition-colors hover:text-violet-400"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
           </ul>
         </div>
 

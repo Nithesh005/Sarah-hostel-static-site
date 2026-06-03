@@ -5,49 +5,41 @@
 
 export const siteConfig = {
   /** Brand */
-  name: "XYZ Men's Hostel",
-  shortName: "XYZ Hostel",
+  name: "Sarah Men's Hostel",
+  shortName: "Sarah Hostel",
   tagline: "Safe, affordable stay for students & working professionals",
   description:
-    "Premium men's hostel at XYZ with furnished rooms, homely food, WiFi, and 24/7 security. Ideal for students and working professionals.",
+    "Premium men's hostel with furnished rooms, homely food, WiFi, and 24/7 security. Ideal for students and working professionals.",
 
   /** Contact */
-  phone: "+919876543210",
-  phoneDisplay: "+91 98765 43210",
-  whatsapp: "919876543210",
-  email: "contact@xyzhostel.com",
+  phone: "+919585873734",
+  phoneDisplay: "+91 95858 73734",
+  whatsapp: "919585873734",
+  email: "sarahhostel@gmail.com",
 
   /** Address */
   address: {
-    line1: "123, Main Road, Near City Bus Stand",
-    area: "XYZ Nagar",
-    city: "Chennai",
+    line1: "5A South Street, And, near lady doak college, opposite to KV school, Singarayar Colony, Narimedu, Madurai, Tamil Nadu 625002",
+    area: "Narimedu",
+    city: "Madurai",
     state: "Tamil Nadu",
-    pincode: "600001",
+    pincode: "625002",
     country: "India",
-  },
-
-  /** Logo — place your file at public/logo.svg or update src */
-  logo: {
-    src: "/logo.svg",
-    alt: "XYZ Men's Hostel logo",
-    width: 140,
-    height: 40,
   },
 
   /** Hero image */
   heroImage: {
     src: "/gallery/hero.jpg",
-    alt: "XYZ Men's Hostel building exterior",
+    alt: "Sarah Men's Hostel building exterior",
   },
 
   /** Google Maps — replace embedUrl with your location from Google Maps → Share → Embed */
   map: {
     embedUrl:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.992257793119!2d80.270462!3d13.082680!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d49a5%3A0x10596c3add742577!2sChennai%2C%20Tamil%20Nadu!2e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin",
-    directionsUrl: "https://maps.google.com/?q=XYZ+Men's+Hostel+Chennai",
-    lat: 13.0827,
-    lng: 80.2705,
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.9364237418363!2d78.12588517503032!3d9.939247990163082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c527504c8f27%3A0xc68f71750ea78b40!2sSARAH%20MEN%27S%20HOSTEL%2C!5e0!3m2!1sen!2sin!4v1780486206198!5m2!1sen!2sin",
+    directionsUrl: "https://maps.google.com/?q=Sarah+Men's+Hostel+Madurai",
+    lat: 9.939248,
+    lng: 78.125885,
   },
 
   /** Social (optional — leave empty string to hide) */
@@ -58,8 +50,8 @@ export const siteConfig = {
 
   /** Business hours shown on contact page */
   officeHours: {
-    weekdays: "8:00 AM – 8:00 PM",
-    sunday: "9:00 AM – 1:00 PM",
+    weekdays: "6:00 AM – 10:00 PM",
+    sunday: "6:00 AM – 10:30 PM",
   },
 
   /** SEO */
@@ -129,15 +121,28 @@ export const siteConfig = {
     linkedInUrl: "https://nithi.shop/",
   },
 
-  /** Navigation links */
+  /**
+   * Header navigation — top-level links and grouped dropdowns.
+   * Edit groups here; all pages stay in the sitemap via getFlatNavLinks().
+   */
   nav: [
     { label: "Home", href: "/" },
-    { label: "Rooms & Pricing", href: "/rooms" },
-    { label: "Food Menu", href: "/food" },
-    { label: "Amenities", href: "/amenities" },
-    { label: "Rules", href: "/rules" },
-    { label: "Gallery", href: "/gallery" },
-    { label: "Location", href: "/location" },
+    {
+      label: "Your stay",
+      items: [
+        { label: "Rooms & Pricing", href: "/rooms" },
+        { label: "Food Menu", href: "/food" },
+        { label: "Amenities", href: "/amenities" },
+        { label: "Rules", href: "/rules" },
+      ],
+    },
+    {
+      label: "Explore",
+      items: [
+        { label: "Gallery", href: "/gallery" },
+        { label: "Location", href: "/location" },
+      ],
+    },
     { label: "Contact", href: "/contact" },
   ],
 } as const;

@@ -26,18 +26,9 @@ export const amenities: Amenity[] = [
   },
   {
     title: "Homely Mess",
-    description: "Fresh South Indian meals with hygienic kitchen practices.",
+    description:
+      "Food included with stay. Morning tiffin lunch; breakfast and dinner at the mess.",
     icon: Utensils,
-  },
-  {
-    title: "24/7 Security",
-    description: "CCTV, biometric entry, and on-site warden for your safety.",
-    icon: Shield,
-  },
-  {
-    title: "Power Backup",
-    description: "Inverter/generator for common areas and essential circuits.",
-    icon: Zap,
   },
   {
     title: "Laundry",
@@ -45,19 +36,9 @@ export const amenities: Amenity[] = [
     icon: Shirt,
   },
   {
-    title: "Study Area",
-    description: "Quiet zone with desks for exam prep and remote work.",
-    icon: BookOpen,
-  },
-  {
     title: "RO Water",
     description: "Filtered drinking water available round the clock.",
     icon: Droplets,
-  },
-  {
-    title: "CCTV",
-    description: "Cameras in corridors and entry for added peace of mind.",
-    icon: Camera,
   },
   {
     title: "Flexible Timings",

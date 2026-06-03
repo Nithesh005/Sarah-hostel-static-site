@@ -14,7 +14,7 @@ export const metadata = createPageMetadata({
 
 const nearby = [
   "5 min walk to city bus stand",
-  "Near XYZ College & IT parks",
+  "Near Lady Doak College & IT parks",
   "Grocery stores and ATMs within 500 m",
   "Auto and cab stand at the main road",
 ];

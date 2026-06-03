@@ -19,7 +19,7 @@ import { GoogleMapEmbed } from "@/components/map/GoogleMapEmbed";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 const highlights = [
-  { icon: Shield, text: "24/7 security & CCTV" },
+  { icon: Shield, text: "24/7 security" },
   { icon: Wifi, text: "High-speed WiFi" },
   { icon: Utensils, text: "Hygienic homely mess" },
 ];
@@ -102,7 +102,7 @@ export default function HomePage() {
 
       <Section
         title="Rooms & pricing"
-        subtitle="Transparent monthly rent. Mess charged separately."
+        subtitle="Transparent monthly rent with mess included."
         className="bg-white"
       >
         <div className="grid gap-6 md:grid-cols-2">

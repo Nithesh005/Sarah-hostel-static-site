@@ -1,4 +1,4 @@
-import { messTimings, messCharges, weeklyMenu } from "@/data/menu";
+import { messTimings, messPolicy, weeklyMenu } from "@/data/menu";
 import { PageHero } from "@/components/layout/PageHero";
 import { Section } from "@/components/ui/Section";
 import { createPageMetadata } from "@/lib/seo";
@@ -6,7 +6,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata = createPageMetadata({
   title: "Food Menu",
   description:
-    "Weekly mess menu with breakfast, lunch, and dinner timings. Veg and non-veg options for hostel residents.",
+    "Weekly mess menu. Food is included with stay; breakfast and dinner at mess, lunch packed in tiffin each morning.",
   path: "/food",
 });
 
@@ -21,10 +21,10 @@ export default function FoodPage() {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {(
             [
+              ["Mess access", messTimings.messAccess],
               ["Breakfast", messTimings.breakfast],
               ["Lunch", messTimings.lunch],
               ["Dinner", messTimings.dinner],
-              ["Sunday breakfast", messTimings.sundayBreakfast],
             ] as const
           ).map(([meal, time]) => (
             <div
@@ -36,10 +36,23 @@ export default function FoodPage() {
             </div>
           ))}
         </div>
-        <p className="mt-6 rounded-lg bg-teal-50 px-4 py-3 text-sm text-teal-900">
-          Mess charges: <strong>₹{messCharges.veg.toLocaleString("en-IN")}/month</strong>{" "}
-          (veg). {messCharges.note}
+        <p className="mt-4 text-sm text-slate-600">
+          {messTimings.sundayBreakfast}. See{" "}
+          <a href="/rules" className="font-medium text-teal-700 hover:text-teal-800">
+            house rules
+          </a>{" "}
+          for full policies.
         </p>
+        <div className="mt-6 space-y-3 rounded-lg bg-teal-50 px-4 py-4 text-sm text-teal-900">
+          <p>
+            <strong>Included with stay:</strong> {messPolicy.includedNote}
+          </p>
+          <p>
+            <strong>Mandatory:</strong> {messPolicy.mandatoryNote}
+          </p>
+          <p>{messPolicy.lunchNote}</p>
+          <p className="text-teal-800">{messPolicy.accessNote}</p>
+        </div>
       </Section>
 
       <Section title="Weekly menu" className="bg-white" centered={false}>
@@ -52,7 +65,7 @@ export default function FoodPage() {
                   Breakfast
                 </th>
                 <th className="px-4 py-3 font-semibold text-slate-900">
-                  Lunch
+                  Lunch (tiffin)
                 </th>
                 <th className="px-4 py-3 font-semibold text-slate-900">
                   Dinner
@@ -77,8 +90,8 @@ export default function FoodPage() {
           </table>
         </div>
         <p className="mt-4 text-xs text-slate-500">
-          Menu may vary on festivals and special occasions. Non-veg served on
-          marked days only.
+          Menu may vary on festivals and special occasions. Lunch is packed in
+          the morning; dinner is served at the mess.
         </p>
       </Section>
     </>

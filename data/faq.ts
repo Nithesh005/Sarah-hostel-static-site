@@ -1,27 +1,22 @@
 export const faqs = [
   {
-    question: "Who can stay at XYZ Men's Hostel?",
+    question: "Who can stay at Sarah Men's Hostel?",
     answer:
-      "We welcome male students (18+) and working professionals. College or employment proof may be requested at admission.",
+      "We welcome male students and working professionals.",
   },
   {
     question: "Is food included in the rent?",
     answer:
-      "No. Mess is optional and charged separately. See our Food Menu page for weekly meals and monthly mess charges.",
+      "Yes. Mess is included in your stay fees and is mandatory for all residents. Breakfast and dinner are at the mess; lunch is packed in a tiffin each morning.",
   },
   {
     question: "Can I visit before booking?",
     answer:
-      "Yes. Call or WhatsApp us to schedule a visit between 8 AM and 8 PM on weekdays.",
-  },
-  {
-    question: "Are AC rooms available?",
-    answer:
-      "Yes. We offer both AC and non-AC sharing options. See Rooms & Pricing for current rates.",
+      "Yes. Call or WhatsApp us to schedule a visit.",
   },
   {
     question: "What documents do I need?",
     answer:
-      "Government ID, two passport-size photos, and emergency contact details. Students should bring college ID if available.",
+      "Government ID, two passport-size photos, and emergency contact details.",
   },
 ];

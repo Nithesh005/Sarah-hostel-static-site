@@ -1,13 +1,19 @@
 export const messTimings = {
-  breakfast: "7:30 AM – 9:00 AM",
-  lunch: "12:30 PM – 2:00 PM",
-  dinner: "7:30 PM – 9:00 PM",
-  sundayBreakfast: "8:00 AM – 9:30 AM",
+  messAccess: "8:00 – 8:30 AM & 8:00 – 8:30 PM",
+  breakfast: "8:00 AM – 8:30 AM (with lunch pickup)",
+  lunch: "8:00 AM – 8:30 AM — served with breakfast (tiffin)",
+  dinner: "8:00 PM – 8:30 PM (at mess)",
+  sundayBreakfast: "8:00 AM – 8:30 AM (same window as weekdays)",
 };
 
-export const messCharges = {
-  veg: 3500,
-  note: "Per person per month. Both veg and non-veg options available on select days.",
+export const messPolicy = {
+  includedNote:
+    "Mess charges are included in your stay fees — no separate mess bill.",
+  mandatoryNote: "Food is mandatory for all residents along with your stay.",
+  lunchNote:
+    "Lunch is prepared in the morning and packed in your tiffin; collect it with breakfast during the morning mess window.",
+  accessNote:
+    "Breakfast and lunch: 8:00 – 8:30 AM. Dinner: 8:00 – 8:30 PM. The mess is closed after these timings.",
 };
 
 export const weeklyMenu = [
