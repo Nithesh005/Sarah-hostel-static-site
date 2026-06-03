@@ -199,7 +199,7 @@ export default function HomePage() {
             <Button
               href={`tel:${siteConfig.phone}`}
               variant="outline"
-              className="!border-white/40 !text-white hover:!bg-white/10"
+              className="!border-white !bg-white !text-purple-900 hover:!bg-purple-50 hover:!text-purple-900"
             >
               {siteConfig.phoneDisplay}
             </Button>
