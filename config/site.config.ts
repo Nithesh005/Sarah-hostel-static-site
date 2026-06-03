@@ -29,7 +29,7 @@ export const siteConfig = {
 
   /** Hero image */
   heroImage: {
-    src: "/gallery/hero.jpg",
+    src: "/gallery/hero1.jpg",
     alt: "Sarah Men's Hostel building exterior",
   },
 
